@@ -1,2 +1,2 @@
-# AntordaBot
+# AndoraBot
 A simple Discord bot
