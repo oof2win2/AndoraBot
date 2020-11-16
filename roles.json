@@ -1,0 +1,8 @@
+{
+  "_comment_mem": "the ID of the role that is the default members role (can be blank for none)",
+  "members": "",
+  "_comment_mod": "the ID of the role that is the default moderator role (can be blank for none)",
+  "moderators": "777986482962432060",
+  "_comment_own": "the ID of the role that is the default owner role (can be blank for none)",
+  "owners": "777986385268965388"
+}

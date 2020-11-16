@@ -14,5 +14,5 @@ module.exports = (client) => {
         );
     }
   };
-  ["general"].forEach((dir) => load(dir));
+  ["general", "moderator"].forEach((dir) => load(dir));
 };
