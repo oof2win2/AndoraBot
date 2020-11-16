@@ -1,0 +1,27 @@
+{
+  "name": "andorabot",
+  "version": "1.0.0",
+  "description": "A simple Discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oof2win2/AndoraBot.git"
+  },
+  "author": "oof2win2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oof2win2/AndoraBot/issues"
+  },
+  "homepage": "https://github.com/oof2win2/AndoraBot#readme",
+  "dependencies": {
+    "discord.js": "^12.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
