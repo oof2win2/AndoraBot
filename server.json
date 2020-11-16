@@ -1,8 +1,13 @@
 {
+  "_comment_general": "This file serves as configuration for the server",
   "_comment_mem": "the ID of the role that is the default members role (can be blank for none)",
   "members": "",
   "_comment_mod": "the ID of the role that is the default moderator role (can be blank for none)",
   "moderators": "777986482962432060",
   "_comment_own": "the ID of the role that is the default owner role (can be blank for none)",
-  "owners": "777986385268965388"
+  "owners": "777986385268965388",
+  "_comment_gid": "the Guild ID (server ID)",
+  "guildID": "749943992719769613",
+  "_comment_modDump": "The ID of the channel to which dump moderator output (banning etc)",
+  "modDump": "777991108465524796"
 }

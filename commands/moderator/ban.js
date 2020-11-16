@@ -30,13 +30,13 @@ module.exports = {
       let toBan = message.mentions.members.first().user;
       const bannedTag = toBan.tag;
       const bannedID = toBan.id;
-      // let res = guild.members.ban(toBan.id, banOptions);
-      // res.catch((e) => {
-      //   return message.reply(`Error banning: ${e}`);
-      // });
-      // res.then(() => {
-      //   message.reply(`User \`${bannedTag}\` was banned`);
-      // });
+      let res = guild.members.ban(toBan.id, banOptions);
+      res.catch((e) => {
+        return message.reply(`Error banning: ${e}`);
+      });
+      res.then(() => {
+        message.reply(`User \`${bannedTag}\` was banned`);
+      });
 
       const modDumpChannel = guild.channels.cache.get(modDump);
       let banEmbed = new MessageEmbed()
@@ -59,6 +59,11 @@ module.exports = {
         (inline = true)
       );
       banEmbed.addField("Source of banning", `${message.url}`);
+      banEmbed.setFooter(
+        `© ${message.guild.me.displayName} | Developed by oof2win2`,
+        client.user.displayAvatarURL()
+      );
+      banEmbed.setTimestamp();
       return modDumpChannel.send(banEmbed);
     }
   },
