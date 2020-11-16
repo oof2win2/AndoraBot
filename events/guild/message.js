@@ -26,7 +26,6 @@ module.exports = async (client, message) => {
   if (commandfile) {
     const accessibility = commandfile.config.accessibility;
     const authRoles = message.member.roles.cache;
-    console.log(accessibility);
     if (roles[accessibility] != "") {
       if (authRoles.some((r) => r.id == roles[accessibility])) {
         commandfile.run(client, message, args);
