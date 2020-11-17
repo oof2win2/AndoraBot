@@ -1,11 +1,11 @@
 module.exports = {
   config: {
-    name: "uptime",
-    aliases: ["ut"],
+    name: 'uptime',
+    aliases: ['ut'],
     description: "Get the bot's uptime",
-    category: "general",
-    usage: "",
-    accessibility: "members",
+    category: 'general',
+    usage: '',
+    accessibility: 'members',
   },
   run: async (client, message) => {
     function formatTime(ms) {
@@ -17,10 +17,10 @@ module.exports = {
       // string.padStart(length, filler)
       // pads the string with the $filler for the desired $length
       // if the length of the string is not equal to $length
-      return `\`${d.padStart(2, "0")}:${h.padStart(2, "0")}:${m.padStart(
+      return `\`${d.padStart(2, '0')}:${h.padStart(2, '0')}:${m.padStart(
         2,
-        "0"
-      )}:${s.padStart(2, "0")}\``;
+        '0',
+      )}:${s.padStart(2, '0')}\``;
     }
     message.channel.send(`My uptime: \`${formatTime(client.uptime)}\``);
   },
