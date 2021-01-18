@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/oof2win2/AndoraBot#readme",
   "dependencies": {
+    "@supercharge/strings": "^1.17.1",
     "common-tags": "^1.8.0",
-    "discord.js": "^12.4.1"
+    "discord.js": "^12.4.1",
+    "sharp": "^0.27.0"
   },
   "devDependencies": {
     "eslint": "^7.13.0",
